@@ -13,8 +13,6 @@ function App() {
     try {
       console.log('Fetching from:', apiUrl)
       const response = await fetch(apiUrl)
-      console.log('Response status:', response.status, response.statusText)
-      console.log('Response ok:', response.ok)
       
       if (!response.ok) {
         console.error('Failed response:', response.status)
@@ -22,15 +20,6 @@ function App() {
       }
       
       const result = await response.json()
-      console.log('Raw API result:', result)
-      console.log('Result type:', typeof result)
-      console.log('Is array:', Array.isArray(result))
-      console.log('Result length:', result?.length)
-      
-      if (result && result.length > 0) {
-        console.log('First item:', result[0])
-        console.log('First item keys:', Object.keys(result[0]))
-      }
       
       setShows(result)
     } catch (e) {
@@ -39,10 +28,6 @@ function App() {
   }
   getShows()
 }, [apiUrl])
-
-console.log('Current shows state:', shows)
-console.log('Shows length:', shows.length)
-
   return (
     <>
       <div className="photo-grid">

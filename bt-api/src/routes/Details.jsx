@@ -33,7 +33,7 @@ function Details() {
         <h3>Details</h3>
         <p>Nothing yet...</p>
 
-        <p><Link to={`/comment/${Id}`}>Add Comment</Link></p>
+        <p><Link to={`/tickets/${Id}`}>Purchase a Ticket</Link></p>
         </>
     )
 }
