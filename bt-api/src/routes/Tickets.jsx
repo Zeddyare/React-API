@@ -56,6 +56,7 @@ function TicketForm() {
         getShowById()
     }, [apiUrl, Id])
 
+    
     const onSubmit = async (data) => {
         setLoading(true)
         setSubmitError(null)
@@ -89,6 +90,7 @@ function TicketForm() {
         }
     }
 
+    //AI help with bootstrap
     return (
         <div className="container mt-5">
             <div className="row mb-4">

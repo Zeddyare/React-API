@@ -33,7 +33,7 @@ function Details() {
         minute: '2-digit' // "30"
     });
 };
-
+    //AI help with bootstrap
     return (
         <div className="container mt-5">
             <div className="row mb-4">

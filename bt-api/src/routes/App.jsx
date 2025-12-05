@@ -10,6 +10,7 @@ function App() {
   const [sortBy, setSortBy] = useState('PostedDate')
   const [sortDir, setSortDir] = useState('asc')
 
+  //AI help with sorting implementation
   useEffect(() => {
     const getShows = async () => {
       setLoading(true)
@@ -34,6 +35,7 @@ function App() {
     getShows()
   }, [apiUrl, sortBy, sortDir])
 
+  //AI help with bootstrap
   return (
     <div className="container py-4">
       <div className="d-flex flex-wrap gap-2 align-items-center mb-3">

@@ -9,6 +9,7 @@ import './index.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    {/* Attempt to fix left side shifting did not work */}
     <div className="app-shell">
       <div className="app-content">
         <BrowserRouter>
