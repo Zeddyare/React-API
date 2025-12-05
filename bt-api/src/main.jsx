@@ -2,6 +2,8 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import App from './routes/App.jsx'
 import TicketForm from './routes/Tickets.jsx'
 import Details from './routes/Details.jsx'

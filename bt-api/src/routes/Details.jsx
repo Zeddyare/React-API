@@ -9,12 +9,16 @@ function Details() {
 
     useEffect(() => {
         const getShowById = async () => {
+            try {
             const response = await fetch(`${apiUrl}${Id}`);
             const result = await response.json();
 
             if (response.ok) {
                 setShow(result);
             }
+        } catch (error) {
+            console.error('Failed to fetch show:', error);
+        }
         }
         getShowById();
     }, []);
