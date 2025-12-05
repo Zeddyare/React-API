@@ -7,7 +7,7 @@
   margin-bottom: 1rem;
   padding: 0;
   display: block;
-  break-inside: avoid; /* keep the whole card in one column */
+  break-inside: avoid;
   position: relative;
 }
 
@@ -50,4 +50,53 @@
   .photo-grid {
     column-count: 1;
   }
+}
+
+html {
+  font-size: 14px;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.app-shell {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.app-content {
+  width: 100%;
+  max-width: 1200px;
+  padding: 1.5rem 1rem;
+}
+
+footer {
+  flex-shrink: 0 !important;
+  margin-top: auto !important;
+  padding: 2rem 0 1rem !important;
 }
